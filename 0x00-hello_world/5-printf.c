@@ -1,11 +1,15 @@
 #include <stdio.h>
-/*
-* main - Entry point
+
+/**
+* main - Entry point of the program
 *
-* Return: Always 0 (Success)
+* This function prints the phrase "with proper grammar, but the outcome is a piece of art,"
+* followed by a new line.
+*
+* Return: 0 (Success)
 */
 int main(void)
 {
 printf("with proper grammar, but the outcome is a piece of art,");
-return(0);
+return (0);
 }
