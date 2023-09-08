@@ -14,8 +14,8 @@ int main(void)
     /* Initialize the random number generator with the current time */
     srand(time(0));
 
-    /* Generate a random number between -100 and 100 */
-    n = rand() % 201 - 100;
+    /* Generate a random number between
+    n = rand() 
 
     /* Check if the number is positive or negative and print the result */
     if (n > 0)
