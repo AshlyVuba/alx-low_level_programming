@@ -9,11 +9,8 @@
 int main(void)
 {
 int n;
-/* Initialize random number generator with current time */
 srand(time(0));
-/* Generate a random number between -100 and 100 */
-n = rand() % 201 - 100;
-/* Check if the number is positive, negative, or zero */
+n = rand() -RAND_MAX/ 2;
 if (n > 0)
 {
 printf("%d is a positive number\n", n);
