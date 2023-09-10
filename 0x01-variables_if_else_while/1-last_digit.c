@@ -4,7 +4,6 @@
 
 /**
  * main - Entry point
- * This program generates a random number and prints information about its last digit.
  * Return: 0 on success
  */
 int main(void)
