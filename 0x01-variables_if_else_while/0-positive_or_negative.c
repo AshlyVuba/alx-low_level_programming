@@ -5,7 +5,7 @@
  * main - entry point
  * Return:Always 0 (success)
  */
-int main n(void)
+int main(void)
 {
 	int n;
 	srand(time(0));
