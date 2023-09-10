@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	char letter ='z';
+	char letter = 'z';
 
 	while (letter >= 'a')
 	{
@@ -13,5 +13,5 @@ int main(void)
 		letter--;
 	}
 	putchar('\n');
-	return 0;
+	return(0);
 }
