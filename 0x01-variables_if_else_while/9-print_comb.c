@@ -11,17 +11,14 @@ int main(void)
 	{
 		for (b = 0; b < 10; b++)
 		{
-			putchar(a + '0');
+			putchar(a + '0'\n);
 			putchar(',');
-			putchar(' ');
-			putchar(b + '0');
+			putchar(b + '0'\n);
 			if (a != 9 || b != 9)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(',')
 			}
 		}
 	}
-	putchar('\n');
 	return (0);
 }
