@@ -16,8 +16,12 @@ int main(void)
 			putchar(' ');
 			putchar((b / 10) + '0');
 			putchar((b % 10) + '0');
-			putchar(',');
-			putchar(' ');
+			{
+				if (a != 99 || b != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 		}
 	}
 	return (0);
