@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point 
+ * main - Entry point
  * Return: 0 on success
  */
 int main(void)
@@ -12,6 +12,10 @@ int main(void)
 		putchar(a + '0');
 		putchar(',');
 		putchar('\n');
+	}
+	if (a != 9)
+	{
+		putchar(',')
 	}
 	return (0);
 }
