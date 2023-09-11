@@ -14,10 +14,7 @@ int main(void)
 			putchar(a + '0');
 			putchar(',');
 			putchar(b + '0');
-			if (a != 9 || b != 9)
-			{
-				putchar(',');
-			}
+			putchar(',');
 		}
 	}
 	return (0);
