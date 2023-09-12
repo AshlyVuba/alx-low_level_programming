@@ -15,7 +15,7 @@ void printAlphabet()
 	}
 	putchar('\n');
 }
-int main()
+int main(void)
 {
 	printAlphabet();
 	return (0);
