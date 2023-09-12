@@ -11,7 +11,7 @@ void printAlphabet()
 	while (letter <= 'z')
 	{
 		putchar(letter);
-		letter++
+		letter++;
 	}
 	putchar('\n');
 }
