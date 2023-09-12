@@ -4,7 +4,7 @@
  * main - check the code
  * Return: Always 0.
  */
-void printAlphabet()
+void print_alphabet()
 {
 	char letter = 'a';
 
@@ -17,6 +17,6 @@ void printAlphabet()
 }
 int main(void)
 {
-	printAlphabet();
+	print_alphabet();
 	return (0);
 }
