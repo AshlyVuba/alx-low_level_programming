@@ -1,17 +1,10 @@
-#include <stdbool.h>
+#include "main.h"
 /**
- * is_alphabetic - checks if a character is an alphabtic character
- *Return: true if the character is alphabetic, false otherwise
+ * _isalpha - checks for alphabetic character
+ * @c: the character to be checked
+ * Return: 1 if c is a letter, 0 otherwise
  */
-
-bool is_alphabetic(char c)
+int _isalpha(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-	{
-		return true;
-	}
-	else 
-	{
-		return false;
-	}
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
