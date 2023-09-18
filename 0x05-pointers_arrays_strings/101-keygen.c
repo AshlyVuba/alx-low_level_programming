@@ -10,7 +10,6 @@ char getRandomChar() {
 }
 
 void generateRandomPassword(char *password, int length, int i) {
-    srand(time(NULL));
     for (i = 0; i < length; i++) {
         password[i] = getRandomChar();
     }
