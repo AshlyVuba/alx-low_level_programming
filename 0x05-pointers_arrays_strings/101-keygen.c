@@ -9,21 +9,30 @@ char getRandomChar() {
     return charset[rand() % charsetSize];
 }
 
-void generateRandomPassword(char *password, int length) {
-    for (int i = 0; i < length; i++) {
+char *generateRandomPassword(int length, int i) {
+    char *password = (char *)malloc((length + 1) * sizeof(char));
+    if (password == NULL) {
+        perror("Memory allocation failed");
+        exit(EXIT_FAILURE);
+    }
+
+    for (i = 0; i < length; i++) {
         password[i] = getRandomChar();
     }
     password[length] = '\0';
+
+    return password;
 }
 
 int main() {
     int passwordLength = 12;
-    char password[passwordLength + 1]; 
 
     srand(time(NULL));
-    generateRandomPassword(password, passwordLength);
+    char *password = generateRandomPassword(passwordLength);
 
     printf("Generated Password: %s\n", password);
+
+    free(password);
 
     return 0;
 }
