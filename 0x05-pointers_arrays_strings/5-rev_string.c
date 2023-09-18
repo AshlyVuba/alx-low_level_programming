@@ -12,7 +12,7 @@ while (s[length] != '\0')
 {
 length++;
 }
-end = length - 1;    
+end = length - 1;
 while (start < end)
 {
 char temp = s[start];
