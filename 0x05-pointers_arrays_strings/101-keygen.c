@@ -9,9 +9,8 @@ char getRandomChar() {
     return charset[rand() % charsetSize];
 }
 
-void generateRandomPassword(char *password, int length) {
+void generateRandomPassword(char *password, int length, int i) {
     srand(time(NULL));
-    int i;
     for (i = 0; i < length; i++) {
         password[i] = getRandomChar();
     }
@@ -22,6 +21,7 @@ int main() {
     int passwordLength = 12; 
     char password[passwordLength + 1];
 
+    srand(time(NULL));
     generateRandomPassword(password, passwordLength);
 
     printf("Generated Password: %s\n", password);
