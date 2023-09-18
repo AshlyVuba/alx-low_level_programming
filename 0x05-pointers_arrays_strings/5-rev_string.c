@@ -4,24 +4,20 @@
  *@s: The string to be modified
  *Return:void
  */
-void rev_string(char *s)
-{
-	int i, c, k;
-	char *a, aux;
 
-	a = s;
-	while (s[c] != '\0')
+void rev_string(char *s) 
 {
-c++;
-}
-for (k = 1; k < c; k++)
-{
-a++;
-}
-for (i = 0; i < (c / 2); i++)
-{
-aux = s[i];
-*a =aux;
-a--;
-}
+    int length = strlen(s);
+    int start = 0;
+    int end = length - 1;
+
+    while (start < end) 
+    {
+        // Swap characters at 'start' and 'end'
+        char temp = s[start];
+        s[start] = s[end];
+        s[end] = temp;
+	start++;
+	    end--;
+    }
 }
