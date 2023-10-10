@@ -9,13 +9,8 @@ void free_dog(dog_t *d)
 {
     if (d != NULL)
     {
-        /* Free the memory for the name and owner strings */
-        if (d->name != NULL)
-            free(d->name);
-        if (d->owner != NULL)
-            free(d->owner);
-
-        /* Free the memory for the dog structure */
+        free(d->name);
+        free(d->owner);
         free(d);
     }
 }
