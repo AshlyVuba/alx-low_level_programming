@@ -1,0 +1,1 @@
+My raedme for struct
