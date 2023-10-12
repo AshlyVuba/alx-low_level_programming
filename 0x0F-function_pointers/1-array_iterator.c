@@ -6,18 +6,25 @@
  * @size: The size of the array
  * @action: A function to apply to each element
  * Return: Nothing
- */
+*/
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	unsigned int i;
-	i = 0;
+	size_t i;
 
-if (array != NULL && action != NULL && size > 0)
-{
-while (i < size)
+	if (array != NULL && action != NULL)
 	{
-	action(array[i]);
-	i++;
+		for (i = 0; i < size; i++)
+		{
+			action(array[i]);
+		}
 	}
 }
+
+/**
+ * print_element - A sample action function to print an element
+ * @element: The element to print
+ */
+void print_element(int element)
+{
+	printf("%d ", element)
 }
