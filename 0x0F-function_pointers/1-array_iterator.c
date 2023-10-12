@@ -1,5 +1,5 @@
 #include <functions_pointers.h>
-#include <stdlib.h>
+#include <stdio.h>
 /**
  * array_iterator - Execute a function on each element of an array
  * @array: The integer array
@@ -9,12 +9,14 @@
 */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	unsigned int i;
+	unsigned int i = 0;
 
-	i = 0;
-	while (i < size)
+	if (array != NULL && action != NULL && size > 0)
 	{
-		action(array[i]);
-		i++;
+		while (i < size)
+		{
+			action(array[i]);
+			i++;
+		}
 	}
 }
