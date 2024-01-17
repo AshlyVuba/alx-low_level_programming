@@ -10,6 +10,12 @@
 
 int main(int argc __attribute__((unused)), char *argv[])
 {
-	printf("%s\n", *argv[]);
-	return (0);
+	if (argc > 0)
+	{
+		printf("%\n", argv[0]);
+		return 0;
+	}
+
+	return 1;
+
 }
